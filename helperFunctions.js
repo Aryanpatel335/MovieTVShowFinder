@@ -4,6 +4,7 @@ const drawDownMenuPopulate = (genres)=>{
     for(i = L; i > 0; i--) {
       select.remove(i);
     }
+    
     for (const genre of genres){
         let option =document.createElement("option");
         option.value= genre.id;

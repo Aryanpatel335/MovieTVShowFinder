@@ -19,16 +19,16 @@
     <br>
     <div id="centerAligned">
         <div id="readInput">
-            <input type="radio" class="radioSelect" id="movie" name="selectType" value="Movie">
+            <input type="radio" class="radioSelect" id="movie" name="selectType" value="Movie" onclick="prevCurrentVal(this);">
             <label for="movie" class="radioLabel">Movie</label>
-            <input type="radio" class="radioSelect" id="tv" name="selectType" value="Tv">
+            <input type="radio" class="radioSelect" id="tv" name="selectType" value="Tv" onclick="prevCurrentVal(this);">
             <label for="tv" class="radioLabel">TV Show</label>
         
         
         </div> 
     </div>   
     <button id="radioSelect">Select</button>
-    <div id="genreInput" hidden>
+    <div id="genreInput">
         <form id="genreForm">
             <label>Select a Genre: </label>
             <select id="genres" name="genres">

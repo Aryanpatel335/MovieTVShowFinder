@@ -142,11 +142,32 @@ const showRandomMovie= async () =>{
 }
 
 var selection;
+var prevValue;
 const submitBtn = document.getElementById('radioSelect');
-submitBtn.onclick = () =>{
+
+const prevCurrentVal  = (radioButton) =>{
     const genreInput = document.getElementById('genreInput');
-    genreInput.removeAttribute('hidden');
+    prevValue = selection;
+    selection = radioButton.value;
+    
+    if(prevValue !== selection){
+        genreInput.style.visibility='hidden';
+        clearMovie();
+        hideLikeDislikeButtons();
+    }
+    else{
+        console.log('error');
+    }
+//     console.log(prevValue);
+//     console.log(selection);
+}
+
+submitBtn.onclick = () =>{
+    
+    const genreInput = document.getElementById('genreInput');
     var radios = document.getElementsByName('selectType');
+    genreInput.style.visibility='visible';
+    
     hideLikeDislikeButtons();
     clearMovie();
     for(var radio of radios){
@@ -154,6 +175,7 @@ submitBtn.onclick = () =>{
             selection = radio.value;
         }
     }
+    
     
     if(selection==="Movie"){
         getGenres().then(drawDownMenuPopulate);
