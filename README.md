@@ -1,2 +1,2 @@
 # MovieTVShowFinder
-#Github pages link: 
+#Github pages link: https://aryanpatel335.github.io/MovieTVShowFinder/
