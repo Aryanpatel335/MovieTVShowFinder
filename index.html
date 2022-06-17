@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <script src="https://kit.fontawesome.com/c32171f568.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./resources/CSS/style.css">
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/movie-camera_1f3a5.png">
+    <script defer src="./helperFunctions.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="Title">🎥----Movie/TV Show Finder----🎥</h1>
+    </header>
+    <br>
+    <div id="centerAligned">
+        <div id="readInput">
+            <input type="radio" class="radioSelect" id="movie" name="selectType" value="Movie">
+            <label for="movie" class="radioLabel">Movie</label>
+            <input type="radio" class="radioSelect" id="tv" name="selectType" value="Tv">
+            <label for="tv" class="radioLabel">TV Show</label>
+        
+        
+        </div> 
+    </div>   
+    <button id="radioSelect">Select</button>
+    <form id="genreForm">
+        <label>Select a Genre: </label>
+        <select id="genres" name="genres">
+            <option disabled selected value="empty" id="empty"> -- select an option -- </option>
+        </select>
+    </form>
+    <button id="generateBtn" >Generate</button>
+    <div id="movieInfo">
+        <div id="text"></div>
+        <div id="poster"></div>
+        
+    </div>
+    <div class="likeordislike" id="likedislike">
+        <button id="like"><i class="fa-regular fa-thumbs-up"></i></button>
+        <button id="dislike"><i class="fa-regular fa-thumbs-down"></i></button>
+    </div>
+</body>
+</html>

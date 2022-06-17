@@ -1,0 +1,118 @@
+body{
+    background-color:mediumturquoise;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.likeordislike{
+    visibility: hidden;
+}
+#Title{
+    text-align: center;
+    margin:50px auto;
+    display:block;
+    font-size: 80px;
+}
+
+#genreForm, #generateBtn,#radioSelect{
+    text-align: center;
+    margin:50px auto;
+    display:block;
+}
+
+label{
+    display:block;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+select{
+    width: 300px;
+    height: 30px;
+    font-size:20px;
+}
+#btn{
+    font-size: 25px;
+    
+    margin:55px auto;
+}
+#likedislike{
+    text-align: center;
+    margin:50px auto;
+    
+}
+
+option{
+    font-size: 20px;
+}
+#text {
+    text-align: center;
+    display:block;
+    margin: auto 350px;
+    margin-top: 50px;
+    
+}
+#text p {
+    font-size:20px;
+}
+#text h1{
+    text-decoration: underline;
+}
+
+#moviePoster{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    
+
+}
+#generateBtn, #radioSelect{
+    font-size:25px;
+    color:black;
+    background-color: orange;
+}
+
+#like,#dislike{
+    font-size:50px;
+    margin:auto 25px;
+}
+#like{
+    background-color: rgba(89, 255, 47, 0.71);
+    
+
+}
+#dislike{
+    background-color: rgba(252, 3, 3, 0.75);
+  
+}
+#centerAligned{
+    text-align: center;
+    margin:auto;
+    
+}
+.radioLabel{
+    display: inline-block;
+    font-size: 25px;
+    vertical-align:auto;
+    margin-right: 1.5%;
+}
+
+.radioSelect{
+    display:inline-block;
+
+}
+
+button{
+    padding:12px 20px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 5px 1px rgba(0,0,0,0.24);
+    cursor: pointer;
+    outline:none;
+    transition: 0.01s all;
+
+}
+button:active{
+    transform:scale(0.95);
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24);
+}
