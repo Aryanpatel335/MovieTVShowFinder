@@ -144,7 +144,8 @@ const showRandomMovie= async () =>{
 var selection;
 const submitBtn = document.getElementById('radioSelect');
 submitBtn.onclick = () =>{
-    
+    const genreInput = document.getElementById('genreInput');
+    genreInput.removeAttribute('hidden');
     var radios = document.getElementsByName('selectType');
     hideLikeDislikeButtons();
     clearMovie();

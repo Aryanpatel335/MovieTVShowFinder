@@ -28,13 +28,15 @@
         </div> 
     </div>   
     <button id="radioSelect">Select</button>
-    <form id="genreForm">
-        <label>Select a Genre: </label>
-        <select id="genres" name="genres">
-            <option disabled selected value="empty" id="empty"> -- select an option -- </option>
-        </select>
-    </form>
-    <button id="generateBtn" >Generate</button>
+    <div id="genreInput" hidden>
+        <form id="genreForm">
+            <label>Select a Genre: </label>
+            <select id="genres" name="genres">
+                <option disabled selected value="empty" id="empty"> -- select an option -- </option>
+            </select>
+        </form>
+        <button id="generateBtn" >Generate</button>
+    </div>
     <div id="movieInfo">
         <div id="text"></div>
         <div id="poster"></div>
