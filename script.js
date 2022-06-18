@@ -2,6 +2,8 @@ const apitmdbKey = '4a92ef08e36ee8ac95c1c60b8007c532';
 const tmbdUrl = 'https://api.themoviedb.org/3';
 
 
+
+
 const generateButton=document.getElementById('generateBtn');
 
 const getTvShowsGenres = async () =>{
@@ -166,8 +168,9 @@ submitBtn.onclick = () =>{
     
     const genreInput = document.getElementById('genreInput');
     var radios = document.getElementsByName('selectType');
-    genreInput.style.visibility='visible';
-    
+    if(selection === 'Movie' || selection ==='Tv'){
+        genreInput.style.visibility = 'visible';
+    }
     hideLikeDislikeButtons();
     clearMovie();
     for(var radio of radios){
